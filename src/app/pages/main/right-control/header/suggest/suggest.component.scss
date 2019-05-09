@@ -1,0 +1,19 @@
+.suggest-container {
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+
+    .suggest-header {
+        margin-bottom: 12px;
+        font-weight: 700;
+        display: block;
+    }
+
+    .no-suggestion {
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.65);
+    }
+}

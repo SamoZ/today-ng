@@ -1,0 +1,45 @@
+div.header-wrapper {
+    padding: 12px;
+    display: flex;
+    align-items: center; // 沿交叉轴对齐方式
+    flex-wrap: nowrap; // 如果一条轴线排不下，如何换行。默认不换行
+    overflow: hidden;
+    line-height: 0;
+
+    img {
+        margin-left: 8px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .username-text {
+        margin-left: 8px;
+        // flex-grow 属性定义项目的比例大小，默认为0，即如果存在剩余空间，也不放大
+        flex: 1; 
+        line-height: 40px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .header-btn {
+        color: #fff;
+
+        i {
+            font-size: 18px;
+        }
+    }
+}
+
+.list-wrapper {
+    overflow-y: scroll;
+    position: absolute;
+    top: 60px;
+    bottom: 48px;
+    width: 100%;
+    padding-bottom: 20px;
+
+    .add-list-btn-wrapper {
+        margin-top: 8px;
+        text-align: center;
+    }
+}

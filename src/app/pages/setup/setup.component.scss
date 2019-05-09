@@ -1,0 +1,57 @@
+$grey-text: rgba(0, 0, 0, 0.65);
+
+div.page-content {
+    display: flex;
+    justify-content: center; // 沿主轴对齐方式
+    align-items: center; // 沿交叉轴对齐方式
+    padding-top: 50px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column; // 主轴为垂直方向，起点在上沿
+        align-items: center; //沿主轴对齐方式
+        min-height: 400px;
+        max-height: 420px;
+        height: 60vh;
+        min-width: 300px;
+        max-width: 400px;
+        width: 30vw;
+        padding: 40px 30px 10px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    img.logo-img {
+        // flex-grow 属性定义项目的比例大小，默认为0，即如果存在剩余空间，也不放大
+        // flex-shrink 属性定义项目的缩小比例，默认为1，即如果空间不足，该项目将缩小
+        // flex-basis 属性定义在分配多余空间之前，该项目占据主轴空间。默认为auto，即项目本来大小
+        flex: 0 0 120px;
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .text-wrapper {
+        display: flex;
+        flex: 1;
+        flex-direction: column; // 主轴为垂直方向，起点在上沿
+        justify-content: center; // 沿主轴对齐方式
+        text-align: center;
+
+        .title-text {
+            font-size: 24px;
+            font-style: italic;
+            color: $grey-text;
+        }
+    }
+
+    button {
+        margin-top: 26px;
+        width: 100%;
+    }
+
+    .copy-right {
+        margin-top: 30px;
+        flex: 0 0 40px;
+    }
+}

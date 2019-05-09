@@ -1,0 +1,16 @@
+<div class="full-screen setting-container">
+    <div class="back-btn floating-btn" (click)="goBack()">
+        <span>
+            <i nz-icon type="left"></i>
+        </span>
+    </div>
+    <div class="content">
+        <div class="body">
+            <img src="./assets/img/default-avatar.png" alt="" class="avatar">
+            <nz-divider nzType="horizontal" nzText="用户名"></nz-divider>
+            <input nz-input placeholder="用户名" [nzSize]="'large'" #usernameInput
+                (blur)="validateUsername(usernameInput.value)">
+            <nz-divider [nzType]="'horizontal'" [nzText]="'应用设置'"></nz-divider>
+        </div>
+    </div>
+</div>
